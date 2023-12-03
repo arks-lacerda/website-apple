@@ -41,3 +41,58 @@ header nav li {
 
     list-style: none;
 }
+
+
+main section {
+    text-align: center;
+}
+
+main section.shopping-event {
+    height: 67.6rem;
+    padding-top: 5.1rem;
+    background-color: var(--bg-primary);
+    background-image: url('../public/assets/shopping-event.svg');
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+main section h1 {
+    color: var(--title-primary-color);
+    font-size: 5.6rem;
+    line-height: 4rem;
+    letter-spacing: 0.28px;
+    font-weight: bold;
+}
+
+main section h2 {
+    padding-top: 2rem;
+    margin: auto;
+    width: 55.7rem;
+    color: var(--subtitle-color);
+    font-size: 2.8rem;
+    font-weight: 400;
+    opacity: 0.5;
+    line-height: 3.1rem;
+    letter-spacing: 0.12px;
+}
+
+main section h2 span {
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.1rem;
+    letter-spacing: 0.12rem; 
+}
+
+main section a {
+    display: inline-block;
+    color: var(--action-color);
+    padding-top: 1.4rem;
+    font-size: 3.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem; /* 138.1% */
+    letter-spacing: 0.24rem; 
+    text-decoration: none;
+}
