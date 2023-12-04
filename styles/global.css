@@ -13,7 +13,7 @@
     font-size: 62.5%;
 }
 
-main section > a {
+main a {
     color: var(--action-color);
     text-decoration: none;
 }
@@ -56,10 +56,11 @@ main section {
 }
 
 main section.shopping-event {
-    height: 67.6rem;
+    height: 73.6rem;
     padding-top: 5.1rem;
     background-color: var(--bg-primary);
     background-image: url('../public/assets/shopping-event.svg');
+    background-position: center;
     background-repeat: repeat;
     background-size: cover;
     opacity: 0.9;
@@ -105,8 +106,9 @@ main section.shopping-event a {
 
 section.tv-plus {
     margin-top: 1rem;
-    height: 67.6rem;
+    height: 73.6rem;
     background-image: url('../public/assets/spirited-bg.svg');
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -162,8 +164,9 @@ main .tv-plus > div:last-child span {
 
 section.iphone-14 {
     margin-top: 1rem;
-    height: 67.6rem;
+    height: 73.6rem;
     background-image: url('../public/assets/iPhone14-bg.svg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -195,4 +198,85 @@ section.iphone-14 a {
     font-weight: 400;
     line-height: 3rem;
     letter-spacing: 0.02rem; 
+}
+
+section.about-products {
+    padding: 1.54rem;
+    display: grid;
+    gap: 0.4rem 0.4rem;
+    grid-template-areas: 
+    'iphone ipad'
+    'airpod watchs'
+    'watchu card';
+}
+
+article {
+    position: relative;
+    grid-area: iphone;
+}
+
+article a {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: -0.04rem;
+
+    padding-top: 1.2rem;
+}
+
+article > div:last-child {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+
+article h2 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.4rem;
+} 
+
+article p {
+    padding-top: .2rem;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem;
+    letter-spacing: 0.04rem; 
+}
+
+article a + a {
+    padding-left: 1.5rem;
+}
+
+
+
+article.iphone-products{
+    grid-area: iphone;
+    color: var(--title-primary-color);
+}
+
+article.ipad-products{
+    grid-area: ipad;
+}
+
+article.airpods-products{
+    grid-area: airpod;
+}
+
+article.watch-series-products{
+    grid-area: watchs;
+    color: var(--text-light);
+}
+
+article.watch-ultra-products{
+    grid-area: watchu;
+}
+
+article.card-products{
+    grid-area: card;
 }
